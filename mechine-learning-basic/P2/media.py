@@ -20,7 +20,7 @@ class Movie(object):
 
 	def show_trailer(self):
 		"""
-		通过浏览器打开预告片链接
+		调用浏览器打开预告片链接
 		"""
 		webbrowser.open(self.trailer_url)
 
