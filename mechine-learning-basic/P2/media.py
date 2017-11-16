@@ -2,11 +2,25 @@
 import webbrowser
 
 class Movie(object):
-	def __init__(self, _title, _storyline, _image, _url):
-		self.title = _title
-		self.storyline = _storyline
-		self.poster_image_url = _image
-		self.trailer_url = _url
+	"""
+	存储电影相关信息
+	"""
+	def __init__(self, title, storyline, poster_image_url, trailer_url):
+		"""
+		 Input: title => 影片名称
+		 		storyline => 故事简介
+		 		poster_image_url => 图片地址
+		 		trailer_url => 预告片地址
+		"""
+		self.title = title
+		self.storyline = storyline
+		self.poster_image_url = poster_image_url
+		self.trailer_url = trailer_url
+
 
 	def show_trailer(self):
-		webbrowser.open(self.trailer_youtube_url)
+		"""
+		通过浏览器打开预告片链接
+		"""
+		webbrowser.open(self.trailer_url)
+
